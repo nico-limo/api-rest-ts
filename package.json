@@ -1,0 +1,36 @@
+{
+  "name": "express-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "ts-standard",
+    "dev": "ts-node-dev src/index.ts",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nico Limo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "4.17.17",
+    "ts-node-dev": "2.0.0",
+    "ts-standard": "^12.0.2",
+    "typescript": "5.0.2"
+  },
+  "dependencies": {
+    "express": "4.18.2"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "ignore": [
+      "./build"
+    ],
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ]
+  }
+}
